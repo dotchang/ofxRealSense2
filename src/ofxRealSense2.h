@@ -34,7 +34,7 @@ class ofxRealSense2{
     void drawDepth(const ofRectangle& rect) const;
 
     void drawMeshVertices() { mesh.drawVertices(); } /////
-	ofMesh& getMesh() { return mesh; }               /////
+    ofMesh& getMesh() { return mesh; }               /////
     
     private:
         rs2::colorizer color_map;
