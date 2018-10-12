@@ -44,6 +44,6 @@ class ofxRealSense2{
         ofImage depthImage;
     
         rs2::pointcloud pointcloud; /////
-		rs2::points points;         /////
-		ofMesh mesh;                /////
+	rs2::points points;         /////
+	ofMesh mesh;                /////
 };
