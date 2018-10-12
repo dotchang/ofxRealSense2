@@ -33,6 +33,8 @@ class ofxRealSense2{
     void drawDepth(const ofPoint& point) const;
     void drawDepth(const ofRectangle& rect) const;
 
+    void drawMeshVertices() { mesh.drawVertices(); } /////
+	ofMesh& getMesh() { return mesh; }               /////
     
     private:
         rs2::colorizer color_map;
@@ -40,4 +42,8 @@ class ofxRealSense2{
     
         ofImage colorImage;
         ofImage depthImage;
+    
+        rs2::pointcloud pointcloud; /////
+		rs2::points points;         /////
+		ofMesh mesh;                /////
 };
